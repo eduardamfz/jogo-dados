@@ -12,7 +12,11 @@ function rolarDado() {
 function estadoInicial() {
   return {
     rodadaAtual: 1,
+<<<<<<< HEAD
     turno: "jogador1",
+=======
+    turno: "jogador1", // define qual botão "Jogar" está habilitado
+>>>>>>> 654c7aefb738bb2a4f7fc4a2bc7616db0a36d9e4
     dadosJogador1: [null, null],
     dadosJogador2: [null, null],
     mensagemRodada: "Clique em Jogar para o Jogador 1",
@@ -97,6 +101,10 @@ export default function JogoDados() {
       };
     });
 
+<<<<<<< HEAD
+=======
+    // Avança para a próxima rodada automaticamente (se não for a última)
+>>>>>>> 654c7aefb738bb2a4f7fc4a2bc7616db0a36d9e4
     setTimeout(() => {
       setEstado((prev) => {
         if (prev.jogoFinalizado) return prev;
